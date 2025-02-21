@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curriculum vitae</title>
+    
+    <!-- Collegamento ai font Orbitron -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- INIZIO style i css -->
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif; /* Corretto font-family */
+        }
+
+       
+        .orbitron {
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        nav {
+            background: #333;
+            padding: .15em 0;
+            width: 100%;
+        }
+        
+        nav ul {
+            display: flex;
+        }
+        
+        nav ul li {
+            margin-left: 2.5em;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        nav.nav-sticky {
+            position: sticky;
+            top: 0px;
+        }
+        
+        header {
+            background: rgb(243, 189, 10);
+            color: #fff;
+            display: flex;
+            min-height: 150px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        header h1 {
+            font-size: 3.5em;
+        }
+
+        article {
+            line-height: 1.5em;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 50rem;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        /* Aggiungo Orbitron anche su h1 e h4 */
+        article h1, article h4 {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        article h1 {
+            padding-top: 75px;
+        }
+        
+        .position-sticky {
+            position: sticky;
+            top: 300px;
+            color: #918f8f6c;
+        }
+        
+        h4 {
+            color:rgb(243, 189, 10); /* Colore giallo ai h4 */
+        }
+
+        /* Comportamento delle immagini */
+img {
+    max-width: 100%;  /* Le immagini non devono superare la larghezza del contenitore */
+    height: auto;     /* Mantieni le proporzioni originali */
+}
+
+/* Media queries per dispositivi mobili */
+@media (max-width: 768px) {
+    /* Per la navigazione principale, renderla a blocchi invece che su una riga */
+    nav ul {
+        flex-direction: column; /* Cambia la disposizione dei menu da orizzontale a verticale */
+        align-items: center;
+    }
+
+    /* Distanza tra gli elementi di navigazione */
+    nav ul li {
+        margin-left: 0; /* Elimina la spaziatura laterale */
+        margin-bottom: 1em; /* Spazio verticale tra i link */
+    }
+
+    /* Adattiamo il testo dell'intestazione */
+    header h1 {
+        font-size: 2.5em; /* Riduci la dimensione del testo nei dispositivi più piccoli */
+    }
+
+    /* Modifica il layout dell'articolo per dispositivi più piccoli */
+    article {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    /* Modifica la posizione sticky per il testo "ASSUMETEMI" */
+    .position-sticky {
+        font-size: 0.9em;
+        text-align: center;
+        position: relative; /* Cambia da sticky a relative per evitare sovrapposizioni */
+        margin-top: 1em;
+    }
+
+    /* Riduci la dimensione dei titoli (h1, h4, h3) */
+    article h1, article h4, article h3 {
+        font-size: 1.8em; /* Riduci la dimensione del font per dispositivi più piccoli */
+    }
+}
+
+/* Media queries per tablet */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 3em; /* Ridurre ancora la dimensione del titolo */
+    }
+
+    article {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
+    </style>
+    <!-- FINE style in css -->
+</head>
+
+<body>
+    <nav class="nav-main">
+        <ul>
+            <li><a href="#">CURRICULUM VITAE</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Emanuele Morgillo</h1>
+    </header>
+    <nav class="nav-sticky">
+        <ul>
+            <li><a href="#DATI PERSONALI">DATI PERSONALI</a></li>
+            <li><a href="#INTRODUZIONE">INTRODUZIONE</a></li>
+            <li><a href="#COMPETENZE E SKILLS">COMPETENZE E SKILLS</a></li>
+            <li><a href="#LE MIE IDEE">LE MIE IDEE</a></li>
+            <li><a href="#LINK UTILI">LINK UTILI</a></li>
+        </ul>
+    </nav>
+    
+    <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+    
+ <article>
+        <!-- IMMAGINE PROFESSIONALE O MEME -->
+        <img src="immagine meme.jpg" alt="foto curriculum inappropriata ;D " width="200" height="250">
+        
+        <!-- DATI PERSONALI -->
+        <h1 id="DATI PERSONALI">DATI PERSONALI</h1>
+        <p>
+            <address><strong>Nome e Cognome:</strong> Emanuele Morgillo</address>
+            <address><strong>Indirizzo:</strong> Via Profica, 105</address>
+            <address><strong>Email:</strong> Emanuelemorgillo2295@gmail.com</address>
+            <address><strong>Telefono:</strong> 3893411893</address>
+            <address><strong>Nazionalità:</strong> Italiana</address>
+        </p>
+    </article>
+           <!-- Applicato la classe orbitron all'articolo -->
+    <article class="orbitron">
+        <!-- orbitron -->
+        <h1 id="INTRODUZIONE">INTRODUZIONE</h1>
+        <h3>Obiettivo Professionale</h3>
+        <p>Sono alla ricerca di una carriera stabile che mi permetta di utilizzare le competenze professionali acquisite, crescendo e contribuendo al successo dell'azienda in un ambiente stimolante.</p>
+        
+        <h1 id="COMPETENZE E SKILLS">COMPETENZE E SKILLS</h1>
+        <h4>HARD SKILLS</h4>
+        <p><strong>Competenze Finanziarie e Contabili:</strong> Gestione software, analisi dei dati, analisi dei costi, risk management.</p>
+        <p><strong>Competenze CNC:</strong> Uso dei macchinari CNC (controllo numerico) con sistemi Hidenain, Siemens e Fanuc.</p>
+        <p><strong>Competenze di ingegneria e Progettazione:</strong> Software CAD, CAM, AutoCAD per la progettazione tecnica.</p>
+        
+        <h4>SOFT SKILLS</h4>
+        <p><strong>Pensiero Critico:</strong> Capacità di analizzare situazioni, identificare problemi e trovare soluzioni efficaci in modo rapido.</p>
+        <p><strong>Intelligenza Emotiva:</strong> Consapevolezza delle proprie emozioni e di quelle degli altri, con una buona gestione delle proprie reazioni emotive.</p>
+        <p><strong>Competenze Sociali:</strong> Abilità nel costruire rapporti positivi tramite comunicazione e collaborazione.</p>
+        <p><strong>Lavoro di Squadra:</strong> Buona predisposizione a collaborare in gruppo.</p>
+        <p><strong>Apertura Mentale:</strong> Disponibilità a imparare cose nuove, adattarsi ai cambiamenti e cercare soluzioni innovative.</p>
+        <p><strong>Gestione del Team:</strong> Esperienza nel coordinare piccoli gruppi di lavoro, motivando i membri e garantendo il raggiungimento degli obiettivi.</p>
+        
+        <h1 id="LE MIE IDEE">LE MIE IDEE</h1>
+        <p>CONQUISTA DEL MONDO!!!</p>
+        <p>Scherzo, vorrei imparare il più possibile per portare poi innovazione e semplificare il mondo in cui viviamo, specialmente in Italia! Renderlo un paese più smart, sicuro e affidabile. Tutto questo dopo essere diventato un'eccellenza del settore.</p>
+        
+        <h1 id="LINK UTILI">LINK UTILI</h1>
+        <p>Profili social: <em>Instagram, LinkedIn, Discord</em></p>
+        <ul>
+            <li><a href="https://www.instagram.com/e_morgilloo/">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/emanuele-morgillo-6b530b208/">LinkedIn</a></li>
+            <li><a href="discordlink">Discord</a></li> <!-- ricordarmi di aggiungere link discord -->
+        </ul>
+        
+        <div>
+            <address>Emanuele Morgillo</address>
+            <p><time datetime="2025-02-13">Creato il 13/02/2025</time></p>
+        </div>
+        
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+        <p class="position-sticky">ASSUMETEMI, DIVENTERÒ UN CAMPIONE</p>
+    </article>
+    
+    <!-- Link al file CSS esterno -->
+    <link rel="stylesheet" href="./curriculum vitae.css">
+</body>
+</html>
